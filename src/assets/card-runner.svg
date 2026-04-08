@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="50" y1="40" x2="1150" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0.22"/>
+      <stop offset="0.55" stop-color="#34D399" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#F472B6" stop-opacity="0.14"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="700" rx="48" fill="url(#bg)"/>
+  <g opacity="0.5">
+    <path d="M120 480C240 420 300 520 420 460C520 410 590 480 710 430C840 376 900 460 1060 390" stroke="rgba(255,255,255,0.20)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M90 520H1110" stroke="rgba(255,255,255,0.20)" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#glow)">
+    <rect x="190" y="410" width="70" height="100" rx="18" fill="rgba(255,255,255,0.88)"/>
+    <rect x="268" y="460" width="110" height="50" rx="18" fill="#60A5FA"/>
+    <rect x="440" y="450" width="40" height="60" rx="14" fill="#FB7185"/>
+    <rect x="620" y="430" width="48" height="80" rx="16" fill="#FACC15"/>
+    <rect x="850" y="455" width="56" height="55" rx="16" fill="#A78BFA"/>
+  </g>
+  <g opacity="0.9">
+    <text x="84" y="628" fill="white" fill-opacity="0.88" font-family="system-ui,Segoe UI,Arial" font-size="48" font-weight="800">RUNNER</text>
+    <text x="84" y="668" fill="white" fill-opacity="0.62" font-family="system-ui,Segoe UI,Arial" font-size="22" font-weight="600">Sky Dash</text>
+  </g>
+</svg>

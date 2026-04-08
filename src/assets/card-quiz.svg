@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="40" x2="1140" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FACC15" stop-opacity="0.20"/>
+      <stop offset="0.55" stop-color="#FB7185" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0.14"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="700" rx="48" fill="url(#bg)"/>
+  <g opacity="0.25">
+    <rect x="150" y="140" width="900" height="420" rx="32" fill="#FFFFFF" fill-opacity="0.10" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <path d="M210 210H990M210 280H820M210 350H920M210 420H760" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#glow)">
+    <text x="210" y="340" fill="#FFFFFF" fill-opacity="0.92" font-family="system-ui,Segoe UI,Arial" font-size="92" font-weight="900">12 x 7</text>
+    <text x="210" y="420" fill="white" fill-opacity="0.70" font-family="system-ui,Segoe UI,Arial" font-size="34" font-weight="700">streak multiplier</text>
+    <circle cx="980" cy="230" r="22" fill="#34D399"/>
+    <path d="M970 230L978 238L992 218" stroke="#0B1024" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g opacity="0.9">
+    <text x="84" y="628" fill="white" fill-opacity="0.88" font-family="system-ui,Segoe UI,Arial" font-size="48" font-weight="800">QUIZ</text>
+    <text x="84" y="668" fill="white" fill-opacity="0.62" font-family="system-ui,Segoe UI,Arial" font-size="22" font-weight="600">Streak Storm</text>
+  </g>
+</svg>

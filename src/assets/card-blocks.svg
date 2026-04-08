@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="40" x2="1140" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F97316" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#EC4899" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0.16"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="700" rx="48" fill="url(#bg)"/>
+  <g opacity="0.24">
+    <rect x="140" y="130" width="520" height="440" rx="26" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.18)"/>
+    <path d="M192 130V570M244 130V570M296 130V570M348 130V570M400 130V570M452 130V570M504 130V570M556 130V570M608 130V570" stroke="rgba(255,255,255,0.14)"/>
+    <path d="M140 182H660M140 234H660M140 286H660M140 338H660M140 390H660M140 442H660M140 494H660M140 546H660" stroke="rgba(255,255,255,0.14)"/>
+  </g>
+  <g filter="url(#glow)">
+    <rect x="770" y="190" width="84" height="84" rx="18" fill="#FACC15"/>
+    <rect x="856" y="190" width="84" height="84" rx="18" fill="#60A5FA"/>
+    <rect x="942" y="190" width="84" height="84" rx="18" fill="#34D399"/>
+    <rect x="770" y="276" width="84" height="84" rx="18" fill="#A78BFA"/>
+    <rect x="856" y="276" width="84" height="84" rx="18" fill="#FB7185"/>
+    <rect x="770" y="362" width="84" height="84" rx="18" fill="#EC4899"/>
+    <rect x="856" y="362" width="84" height="84" rx="18" fill="#F97316"/>
+    <rect x="942" y="362" width="84" height="84" rx="18" fill="#8B5CF6"/>
+  </g>
+  <g opacity="0.9">
+    <text x="84" y="628" fill="white" fill-opacity="0.88" font-family="system-ui,Segoe UI,Arial" font-size="48" font-weight="800">BLOCKS</text>
+    <text x="84" y="668" fill="white" fill-opacity="0.62" font-family="system-ui,Segoe UI,Arial" font-size="22" font-weight="600">Level Grid</text>
+  </g>
+</svg>

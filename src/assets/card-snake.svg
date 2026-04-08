@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1120" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E" stop-opacity="0.25"/>
+      <stop offset="0.45" stop-color="#60A5FA" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="snake" x1="140" y1="140" x2="1060" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A7F3D0"/>
+      <stop offset="0.6" stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feColorMatrix in="b" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.9 0" result="c"/>
+      <feMerge>
+        <feMergeNode in="c"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1200" height="700" rx="48" fill="url(#bg)"/>
+  <g opacity="0.35">
+    <path d="M80 130H1120" stroke="#fff" stroke-opacity="0.25"/>
+    <path d="M80 220H1120" stroke="#fff" stroke-opacity="0.18"/>
+    <path d="M80 310H1120" stroke="#fff" stroke-opacity="0.14"/>
+    <path d="M80 400H1120" stroke="#fff" stroke-opacity="0.12"/>
+    <path d="M80 490H1120" stroke="#fff" stroke-opacity="0.10"/>
+    <path d="M180 80V620" stroke="#fff" stroke-opacity="0.10"/>
+    <path d="M320 80V620" stroke="#fff" stroke-opacity="0.12"/>
+    <path d="M460 80V620" stroke="#fff" stroke-opacity="0.14"/>
+    <path d="M600 80V620" stroke="#fff" stroke-opacity="0.16"/>
+    <path d="M740 80V620" stroke="#fff" stroke-opacity="0.14"/>
+    <path d="M880 80V620" stroke="#fff" stroke-opacity="0.12"/>
+    <path d="M1020 80V620" stroke="#fff" stroke-opacity="0.10"/>
+  </g>
+  <g filter="url(#glow)">
+    <path d="M220 470C320 380 360 520 450 440C520 378 560 440 635 380C720 312 770 380 860 300C930 240 980 265 1010 240"
+      stroke="url(#snake)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1016" cy="238" r="24" fill="#A7F3D0"/>
+    <circle cx="1024" cy="232" r="6" fill="#0B1024"/>
+    <circle cx="105" cy="190" r="18" fill="#FB7185"/>
+  </g>
+  <g opacity="0.9">
+    <text x="84" y="628" fill="white" fill-opacity="0.88" font-family="system-ui,Segoe UI,Arial" font-size="48" font-weight="800">SNAKE</text>
+    <text x="84" y="668" fill="white" fill-opacity="0.62" font-family="system-ui,Segoe UI,Arial" font-size="22" font-weight="600">Neon Rush</text>
+  </g>
+</svg>

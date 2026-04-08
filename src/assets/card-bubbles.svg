@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="50" y1="40" x2="1150" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA" stop-opacity="0.20"/>
+      <stop offset="0.55" stop-color="#22D3EE" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#F97316" stop-opacity="0.12"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="bubble" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) rotate(45) scale(80)">
+      <stop stop-color="rgba(255,255,255,0.95)"/>
+      <stop offset="0.18" stop-color="rgba(255,255,255,0.50)"/>
+      <stop offset="1" stop-color="rgba(0,0,0,0.22)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="700" rx="48" fill="url(#bg)"/>
+  <g opacity="0.22">
+    <path d="M160 560C290 510 380 610 520 560C670 505 760 600 920 530C1030 480 1080 500 1120 480" stroke="rgba(255,255,255,0.16)" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#glow)">
+    <g transform="translate(310 250)">
+      <circle cx="0" cy="0" r="48" fill="#60A5FA"/>
+      <circle cx="-14" cy="-18" r="22" fill="rgba(255,255,255,0.35)"/>
+    </g>
+    <g transform="translate(420 200)">
+      <circle cx="0" cy="0" r="54" fill="#34D399"/>
+      <circle cx="-16" cy="-20" r="24" fill="rgba(255,255,255,0.35)"/>
+    </g>
+    <g transform="translate(545 245)">
+      <circle cx="0" cy="0" r="50" fill="#F472B6"/>
+      <circle cx="-14" cy="-18" r="22" fill="rgba(255,255,255,0.35)"/>
+    </g>
+    <g transform="translate(470 320)">
+      <circle cx="0" cy="0" r="54" fill="#FACC15"/>
+      <circle cx="-16" cy="-20" r="24" fill="rgba(255,255,255,0.35)"/>
+    </g>
+    <g transform="translate(600 330)">
+      <circle cx="0" cy="0" r="48" fill="#A78BFA"/>
+      <circle cx="-14" cy="-18" r="22" fill="rgba(255,255,255,0.35)"/>
+    </g>
+    <g transform="translate(780 420)">
+      <rect x="-24" y="-70" width="48" height="120" rx="18" fill="rgba(255,255,255,0.88)"/>
+      <path d="M0 -80L0 -140" stroke="rgba(255,255,255,0.75)" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g opacity="0.9">
+    <text x="84" y="628" fill="white" fill-opacity="0.88" font-family="system-ui,Segoe UI,Arial" font-size="48" font-weight="800">BUBBLES</text>
+    <text x="84" y="668" fill="white" fill-opacity="0.62" font-family="system-ui,Segoe UI,Arial" font-size="22" font-weight="600">Prism Pop</text>
+  </g>
+</svg>
