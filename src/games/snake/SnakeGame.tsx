@@ -252,8 +252,6 @@ export function SnakeGame({
       if (canvas.width !== Math.floor(w * dpr) || canvas.height !== Math.floor(h * dpr)) {
         canvas.width = Math.floor(w * dpr)
         canvas.height = Math.floor(h * dpr)
-        canvas.style.width = `${w}px`
-        canvas.style.height = `${h}px`
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
       }
 
@@ -377,7 +375,7 @@ export function SnakeGame({
           </button>
         </div>
       )}
-      <canvas ref={canvasRef} className="canvas" width={canvasW} height={canvasH} />
+      <canvas ref={canvasRef} className="canvas canvas--snake" width={canvasW} height={canvasH} />
     </div>
   )
 }

@@ -301,6 +301,16 @@ html[data-theme="light"] .hero__glass {
   .profile__name {
     width: 70px;
   }
+  .game-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .game-head__right {
+    min-width: 0;
+  }
+  .game-actions {
+    width: 100%;
+  }
 }
 
 .card {
@@ -649,10 +659,23 @@ html[data-theme="light"] .pill {
 
 .canvas--wide {
   width: min(900px, 100%);
+  height: auto;
+  aspect-ratio: 900 / 360;
+  display: block;
 }
 
 .canvas--tall {
   width: min(900px, 100%);
+  height: auto;
+  aspect-ratio: 900 / 520;
+  display: block;
+}
+
+.canvas--snake {
+  width: min(600px, 100%);
+  height: auto;
+  aspect-ratio: 26 / 18;
+  display: block;
 }
 
 .kbd {

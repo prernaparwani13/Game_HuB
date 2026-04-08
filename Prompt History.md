@@ -85,6 +85,7 @@ Create an addictive, visually impressive, smooth real-time gaming experience tha
 2. check the Endless runner sky , it is not working properly, verify
 
 3. Also add start button , when user click on start when only game should start.
+4. Make it responsive.
 
 
 

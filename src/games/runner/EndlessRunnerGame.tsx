@@ -80,8 +80,6 @@ export function EndlessRunnerGame({
 
     canvas.width = Math.floor(W * dpr)
     canvas.height = Math.floor(H * dpr)
-    canvas.style.width = `${W}px`
-    canvas.style.height = `${H}px`
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
 
     const groundY = H - 64

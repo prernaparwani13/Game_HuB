@@ -195,16 +195,19 @@ export function BubbleShooterGame({
 
     canvas.width = Math.floor(W * dpr)
     canvas.height = Math.floor(H * dpr)
-    canvas.style.width = `${W}px`
-    canvas.style.height = `${H}px`
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
 
     const onMove = (e: PointerEvent) => {
       const st = stateRef.current
       if (!st) return
       const r = canvas.getBoundingClientRect()
-      st.aim.x = e.clientX - r.left
-      st.aim.y = e.clientY - r.top
+      const cssW = Math.max(1, r.width)
+      const cssH = Math.max(1, r.height)
+      const cssX = e.clientX - r.left
+      const cssY = e.clientY - r.top
+      // Map pointer position (CSS pixels) into the game's logical coordinate space.
+      st.aim.x = (cssX * W) / cssW
+      st.aim.y = (cssY * H) / cssH
     }
     canvas.addEventListener('pointermove', onMove)
 
